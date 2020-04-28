@@ -2,6 +2,7 @@ class Triangle
   class TriangleError < StandardError
     def message
       "this is not a triangle"
+    end
   end
   
   attr_accessor :a, :b, :c
