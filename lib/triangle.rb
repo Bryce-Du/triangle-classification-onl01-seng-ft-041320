@@ -20,10 +20,9 @@ class Triangle
       rescue TriangleError => error
           puts error.message
       end
-    end
-    if (@a == @b && @b == @c && @c == @a)
+    elsif (@a == @b && @b == @c && @c == @a)
       :equilateral
-    else if (@a == @b || @b == @c || @a == @c)
+    elsif (@a == @b || @b == @c || @a == @c)
       :isosceles
     else
       :scalene
